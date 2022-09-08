@@ -14,8 +14,8 @@ end
 20.times do
     Purchase.create(
         purchase_title: Faker::Book.title,
-        customer_id: 1,
-        book_id: 1
+        customer_id: rand(1..20),
+        book_id: rand(1..20)
     )
 end
 
