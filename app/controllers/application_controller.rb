@@ -22,9 +22,9 @@ class ApplicationController < Sinatra::Base
     genres = Genre.find(params[:id])
   end
 
-  get 'customer/' do
-    customer = Customer.all
-    customer.to_json(only:[:name])
+  get 'customers/' do
+    customers = Customer.all
+    customers.to_json(only:[:name])
   end
 
  # get purchases
