@@ -1,3 +1,2 @@
-class Genre < ActiveRecord::Base
-    
+class Genre < ActiveRecord::Base  
 end
