@@ -1,6 +1,6 @@
 puts "🌱 Seedie seeding seeds..."
 
-50.times do
+10.times do
     Book.create(
      title: Faker::Book.title,
      author: Faker::Book.author,
@@ -9,7 +9,7 @@ puts "🌱 Seedie seeding seeds..."
     )
 end
 
-50.times do 
+10.times do 
     Purchase.create(
         purchase_title: Faker::Book.title,
         customer_id: rand(1..20),
@@ -17,7 +17,7 @@ end
     )
 end
 
-50.times do
+10.times do
     Genre.create(
         fiction: Faker::Book.genre,
         romance: Faker::Book.genre,
@@ -26,7 +26,7 @@ end
     )
 end
 
-20.times do
+10.times do
     Customers.create(
         name: Faker::Name.unique.name_with_middle
     )
