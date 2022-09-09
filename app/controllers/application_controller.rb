@@ -58,18 +58,19 @@ class ApplicationController < Sinatra::Base
   end
   # post request to make new purchases
 
-  post '/purchases' do
-    purchases = Purchase.create(
-      purchase_title: params[:purchase_title],
-      customer_id: params[:customer_id],
-      book_id: params[:book_id]
+  post '/books' do
+    projects= Project.create(
+      title:params[:title],
+      author:params[:author],
+      genre:params[:genre],
+      publisher:params[:publisher]
     )
-  end
+    projects.to_json
 
   # delete to delete the purchases made
-    delete '/purchases' do
-      yeeted = purchases.find
-      yeeted.destroy
-
-  end 
+   delete '/books/:id' do
+    book = Book.find(params[:id])
+    book.destroy
+    book.to_json
+  end
 end
