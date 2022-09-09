@@ -2,9 +2,9 @@ puts "🌱 Seedie seeding seeds..."
 
 50.times do
     Book.create(
-     title: Faker::Book.title
-     author: Faker::Book.author
-     genre: Faker::Book.genre
+     title: Faker::Book.title,
+     author: Faker::Book.author,
+     genre: Faker::Book.genre,
      publisher: Faker::Book.publisher   
     )
 end
