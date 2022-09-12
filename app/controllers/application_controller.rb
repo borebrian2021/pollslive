@@ -3,19 +3,19 @@ class ApplicationController < Sinatra::Base
 
  get '/books' do
     books = Book.all
-    books.to_json(only:[:id, :title, :author, :genre, :publisher])
+    books.to_json
   end
 
   get '/books/:id' do
     book = Book.find(params[:id])
-    book.to_json(only:[:id, :title, :author, :genre, :publisher])
+    book.to_json
   end
 
  # get book genres available
 
   get '/genres' do
     genres = Genre.all
-    genres.to_json(only:[:fiction, :romance , :horror, :sci_fi])
+    genres.to_json
   end
 
   get '/genres/:id' do
@@ -24,13 +24,13 @@ class ApplicationController < Sinatra::Base
 
   get '/customers' do
     customers = Customers.all
-    customers.to_json(only:[:name])
+    customers.to_json
   end
 
  # get purchases
   get '/purchases' do
     purchases = Purchase.all
-    purchases.to_json(only:[:purchase_title, :customer_id, :book_id])
+    purchases.to_json
   end
   # patch request to make the new purchases
   patch '/purchases' do
