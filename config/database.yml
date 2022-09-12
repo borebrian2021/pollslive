@@ -14,5 +14,3 @@ production:
   User: phpdjlgxdvzzvt
   Port: 5432
   Password: 3fe3656c073ec249b856bf697e4fdfb78a58c65843c18cf3324e510c84df372a
-  URI: postgres://phpdjlgxdvzzvt:3fe3656c073ec249b856bf697e4fdfb78a58c65843c18cf3324e510c84df372a@ec2-44-207-133-100.compute-1.amazonaws.com:5432/ddin3a00pe2akn
-  Heroku CLI: heroku pg:psql postgresql-corrugated-59379 --app deployed-ruby
