@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_08_062437) do
+ActiveRecord::Schema.define(version: 2022_09_07_183750) do
 
   create_table "book_genres", force: :cascade do |t|
     t.string "book_id"
@@ -39,13 +39,6 @@ ActiveRecord::Schema.define(version: 2022_09_08_062437) do
     t.string "purchase_title"
     t.string "customer_id"
     t.string "book_id"
-  end
-
-  create_table "table", force: :cascade do |t|
-    t.string "fiction"
-    t.string "romance"
-    t.string "horror"
-    t.string "sci_fi"
   end
 
 end
