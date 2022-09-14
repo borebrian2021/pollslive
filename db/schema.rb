@@ -10,35 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_07_183750) do
+ActiveRecord::Schema.define(version: 2022_09_13_142310) do
 
-  create_table "book_genres", force: :cascade do |t|
-    t.string "book_id"
-    t.string "genre_id"
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "parties", force: :cascade do |t|
+    t.string "party_name"
+    t.string "candidate_name"
+    t.string "profile_image"
+    t.string "party_logo"
   end
 
-  create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.string "author"
-    t.string "genre"
-    t.string "publisher"
-  end
-
-  create_table "customers", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "email"
+    t.integer "role"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "googleId"
+    t.string "img_url"
   end
-
-  create_table "genres", force: :cascade do |t|
-    t.string "fiction"
-    t.string "romance"
-    t.string "horror"
-    t.string "sci_fi"
-  end
-
-  create_table "purchases", force: :cascade do |t|
-    t.string "purchase_title"
-    t.string "customer_id"
-    t.string "book_id"
+  create_table "votes", force: :cascade do |t|
+    t.integer "party_id"
+    t.string "voters_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
