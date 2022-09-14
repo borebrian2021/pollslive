@@ -80,14 +80,16 @@ post "/add_votes" do
      voters_id: params[:voters_id],
      candidate_id: params[:candidate_id]
    )
-   candidate.to_json
+   candidate.to_json(include: :votes )
  end
  
 # VOTE UP
-post "/vote" do
-  vote=Vote.create(party_id:params[:id])
-  find=Party.find(params[:candidate_id])
-  find
+post "/addVote" do
+  random=rand 200..900
+  vote=Vote.create(party_id:params[:candidateID],
+  voters_id:random)
+  message={message:"Success!"}
+  message.to_json
 end
 end
 
