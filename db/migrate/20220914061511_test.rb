@@ -4,3 +4,4 @@ class Test < ActiveRecord::Migration[6.1]
       t.string :test 
   end
 end
+end
