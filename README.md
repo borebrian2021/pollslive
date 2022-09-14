@@ -1,4 +1,4 @@
-# E- LIBRARY RUBY BACKEND
+# E- Presidential Polls
 
 ## Table of content
 
@@ -13,15 +13,17 @@
 
 ## Description
 
- <p>This project is a backend ruby project that creates a database for the books available on the app, the customers who have shoped at the store before and the purchases that the customers have made before </p>
+ <p>This backend program builds the frontend's tables and pulls the necessary information from the database. </p>
 
 ## Features
 
 As a user of the application,you will be able to :
 
-1.Purchase books.
+1.Add favourite.
+2. Create user based on google login response.
+3.Vote for for favourite candidate.
+4.Delete presidential candidate from system.
 
-2.See available books for purchase.
 
  ###  Requirements
 
@@ -32,7 +34,7 @@ As a user of the application,you will be able to :
 ### Installation Process
 
  ****  
-* Clone to the repo : https://github.com/mnjoki21/phase-3-backend
+* Clone to the repo : https://github.com/borebrian2021/pollslive.git
 
 * Unzip the downloaded files in a folder of choice.
 
@@ -45,7 +47,7 @@ As a user of the application,you will be able to :
 
 MIT License
 
-Copyright (c) [2022] [Newton Ombese]
+Copyright (c) [2022] [Brian Koskei]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

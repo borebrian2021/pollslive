@@ -91,5 +91,16 @@ post "/addVote" do
   message={message:"Success!"}
   message.to_json
 end
+
+# VOTE DOWN
+post "/removeVote" do
+  # vote=Vote.where(id:params[:candidateID]).limit(1)
+  vote = Vote.where(party_id:params[:candidateID]).take
+  # delete the review
+
+  vote.destroy
+  # message={message:"Success!"}
+  vote.to_json
+end
 end
 
