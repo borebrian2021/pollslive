@@ -1,4 +1,4 @@
-# E- Presidential Polls
+# Presidential Polls
 
 ## Table of content
 

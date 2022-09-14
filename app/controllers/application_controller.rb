@@ -85,11 +85,20 @@ post "/add_votes" do
  
 # VOTE UP
 post "/addVote" do
+  to_js_v=[]
   random=rand 200..900
   vote=Vote.create(party_id:params[:candidateID],
   voters_id:random)
   message={message:"Success!"}
-  message.to_json
+ message.to_json
+end
+
+ 
+# SUM VOTES
+get "/getSome" do
+to_js_v=[]
+sum_votes={sum:Vote.count}
+sum_votes.to_json
 end
 
 # VOTE DOWN
