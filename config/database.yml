@@ -9,8 +9,8 @@ test:
 production:
   adapter: postgresql
   database: db/production
-  Host: ec2-44-207-133-100.compute-1.amazonaws.com
-  Database: ddin3a00pe2akn
-  User: phpdjlgxdvzzvt
+  Host: ec2-34-194-158-176.compute-1.amazonaws.com
+  Database: dfcqu8oo86qep
+  User: dtzpbeqmqfbjsh
   Port: 5432
-  Password: 3fe3656c073ec249b856bf697e4fdfb78a58c65843c18cf3324e510c84df372a
+  Password: afa0ee5b89c135d7cd4d5983e0d44295278c618562233b86464207e8d92457d2
